@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		68D55B2029FC017500E91CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B1F29FC017500E91CE9 /* AppDelegate.swift */; };
 		68D55B2229FC017500E91CE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B2129FC017500E91CE9 /* SceneDelegate.swift */; };
-		68D55B2429FC017500E91CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B2329FC017500E91CE9 /* ViewController.swift */; };
+		68D55B2429FC017500E91CE9 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B2329FC017500E91CE9 /* WeatherViewController.swift */; };
 		68D55B2729FC017500E91CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D55B2529FC017500E91CE9 /* Main.storyboard */; };
 		68D55B2929FC017600E91CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D55B2829FC017600E91CE9 /* Assets.xcassets */; };
 		68D55B2C29FC017600E91CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D55B2A29FC017600E91CE9 /* LaunchScreen.storyboard */; };
+		68D55B3729FC01CE00E91CE9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3629FC01CE00E91CE9 /* ChangeCityViewController.swift */; };
+		68D55B3B29FC06A500E91CE9 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3A29FC06A500E91CE9 /* DesignableTextField.swift */; };
+		68D55B3D29FC0AFF00E91CE9 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3C29FC0AFF00E91CE9 /* BounceButton.swift */; };
+		68D55B3F29FC0C4E00E91CE9 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3E29FC0C4E00E91CE9 /* DesignButton.swift */; };
+		68D55B4129FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68D55B4029FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		68D55B1C29FC017500E91CE9 /* OpenWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D55B1F29FC017500E91CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68D55B2129FC017500E91CE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68D55B2329FC017500E91CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68D55B2329FC017500E91CE9 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		68D55B2629FC017500E91CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D55B2829FC017600E91CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D55B2B29FC017600E91CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68D55B2D29FC017600E91CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D55B3629FC01CE00E91CE9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		68D55B3A29FC06A500E91CE9 /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		68D55B3C29FC0AFF00E91CE9 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		68D55B3E29FC0C4E00E91CE9 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		68D55B4029FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		68D55B1E29FC017500E91CE9 /* OpenWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				68D55B1F29FC017500E91CE9 /* AppDelegate.swift */,
-				68D55B2129FC017500E91CE9 /* SceneDelegate.swift */,
-				68D55B2329FC017500E91CE9 /* ViewController.swift */,
-				68D55B2529FC017500E91CE9 /* Main.storyboard */,
+				68D55B3329FC017C00E91CE9 /* AppDelegate */,
+				68D55B3929FC01E200E91CE9 /* ExtraResource */,
+				68D55B3829FC01DA00E91CE9 /* Model */,
+				68D55B3529FC01AC00E91CE9 /* Controllers */,
+				68D55B3429FC018B00E91CE9 /* View */,
 				68D55B2829FC017600E91CE9 /* Assets.xcassets */,
-				68D55B2A29FC017600E91CE9 /* LaunchScreen.storyboard */,
 				68D55B2D29FC017600E91CE9 /* Info.plist */,
 			);
 			path = OpenWeatherApp;
+			sourceTree = "<group>";
+		};
+		68D55B3329FC017C00E91CE9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				68D55B1F29FC017500E91CE9 /* AppDelegate.swift */,
+				68D55B2129FC017500E91CE9 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		68D55B3429FC018B00E91CE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68D55B2529FC017500E91CE9 /* Main.storyboard */,
+				68D55B2A29FC017600E91CE9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68D55B3529FC01AC00E91CE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68D55B2329FC017500E91CE9 /* WeatherViewController.swift */,
+				68D55B3629FC01CE00E91CE9 /* ChangeCityViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68D55B3829FC01DA00E91CE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68D55B3929FC01E200E91CE9 /* ExtraResource */ = {
+			isa = PBXGroup;
+			children = (
+				68D55B3A29FC06A500E91CE9 /* DesignableTextField.swift */,
+				68D55B3C29FC0AFF00E91CE9 /* BounceButton.swift */,
+				68D55B3E29FC0C4E00E91CE9 /* DesignButton.swift */,
+				68D55B4029FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf */,
+			);
+			path = ExtraResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D55B4129FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				68D55B2C29FC017600E91CE9 /* LaunchScreen.storyboard in Resources */,
 				68D55B2929FC017600E91CE9 /* Assets.xcassets in Resources */,
 				68D55B2729FC017500E91CE9 /* Main.storyboard in Resources */,
@@ -138,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D55B2429FC017500E91CE9 /* ViewController.swift in Sources */,
+				68D55B2429FC017500E91CE9 /* WeatherViewController.swift in Sources */,
 				68D55B2029FC017500E91CE9 /* AppDelegate.swift in Sources */,
+				68D55B3B29FC06A500E91CE9 /* DesignableTextField.swift in Sources */,
 				68D55B2229FC017500E91CE9 /* SceneDelegate.swift in Sources */,
+				68D55B3F29FC0C4E00E91CE9 /* DesignButton.swift in Sources */,
+				68D55B3729FC01CE00E91CE9 /* ChangeCityViewController.swift in Sources */,
+				68D55B3D29FC0AFF00E91CE9 /* BounceButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +350,8 @@
 				DEVELOPMENT_TEAM = 5UT44ZH347;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need your location to present the weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location to present the weather.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +380,8 @@
 				DEVELOPMENT_TEAM = 5UT44ZH347;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenWeatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Need your location to present the weather.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need your location to present the weather.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
