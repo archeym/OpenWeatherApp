@@ -18,6 +18,9 @@
 		68D55B3D29FC0AFF00E91CE9 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3C29FC0AFF00E91CE9 /* BounceButton.swift */; };
 		68D55B3F29FC0C4E00E91CE9 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D55B3E29FC0C4E00E91CE9 /* DesignButton.swift */; };
 		68D55B4129FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68D55B4029FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		68DF552D2A0288AD00B99634 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 68DF552C2A0288AD00B99634 /* Alamofire */; };
+		68DF552F2A02896500B99634 /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF552E2A02896500B99634 /* OpenWeather.swift */; };
+		68DF55312A0289D000B99634 /* OpenWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF55302A0289D000B99634 /* OpenWeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,8 @@
 		68D55B3C29FC0AFF00E91CE9 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		68D55B3E29FC0C4E00E91CE9 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 		68D55B4029FC0E9000E91CE9 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		68DF552E2A02896500B99634 /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
+		68DF55302A0289D000B99634 /* OpenWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DF552D2A0288AD00B99634 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,8 @@
 		68D55B3829FC01DA00E91CE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				68DF552E2A02896500B99634 /* OpenWeather.swift */,
+				68DF55302A0289D000B99634 /* OpenWeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +146,9 @@
 			dependencies = (
 			);
 			name = OpenWeatherApp;
+			packageProductDependencies = (
+				68DF552C2A0288AD00B99634 /* Alamofire */,
+			);
 			productName = OpenWeatherApp;
 			productReference = 68D55B1C29FC017500E91CE9 /* OpenWeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 68D55B1329FC017500E91CE9;
+			packageReferences = (
+				68DF552B2A0288AD00B99634 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 68D55B1D29FC017500E91CE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,7 +214,9 @@
 				68D55B2229FC017500E91CE9 /* SceneDelegate.swift in Sources */,
 				68D55B3F29FC0C4E00E91CE9 /* DesignButton.swift in Sources */,
 				68D55B3729FC01CE00E91CE9 /* ChangeCityViewController.swift in Sources */,
+				68DF552F2A02896500B99634 /* OpenWeather.swift in Sources */,
 				68D55B3D29FC0AFF00E91CE9 /* BounceButton.swift in Sources */,
+				68DF55312A0289D000B99634 /* OpenWeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68DF552B2A0288AD00B99634 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68DF552C2A0288AD00B99634 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68DF552B2A0288AD00B99634 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68D55B1429FC017500E91CE9 /* Project object */;
 }

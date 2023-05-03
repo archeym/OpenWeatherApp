@@ -10,7 +10,7 @@ import UIKit
 class BounceButton: UIButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.transform = CGAffineTransform(scaleX: 0.9, y: 1.1)
+        self.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         
         
         UIView.animate(withDuration: 0.8, delay: 0.3, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .allowUserInteraction, animations:  {

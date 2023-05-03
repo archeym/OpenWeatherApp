@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,27 +14,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="OpenWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night" translatesAutoresizingMaskIntoConstraints="NO" id="IZX-3s-jkY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijG-1D-1dI">
-                                <rect key="frame" x="249" y="54" width="50" height="50"/>
+                                <rect key="frame" x="322" y="54" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.forward.square.fill" catalog="system">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="3sB-Mt-UZm" kind="presentation" id="2Tc-tU-Jwf"/>
+                                    <segue destination="3sB-Mt-UZm" kind="presentation" identifier="city" id="2Tc-tU-Jwf"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-Tf-a6o">
-                                <rect key="frame" x="80" y="74.5" width="160" height="439"/>
+                                <rect key="frame" x="116.66666666666669" y="219" width="160" height="439"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy2" translatesAutoresizingMaskIntoConstraints="NO" id="AdG-Pv-5Hi">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fog" translatesAutoresizingMaskIntoConstraints="NO" id="AdG-Pv-5Hi">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="128"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="lvl-pg-XDU">
@@ -76,6 +76,11 @@
                             <constraint firstItem="IZX-3s-jkY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="v5b-q5-bF1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="BQo-Tf-MB1" id="DyC-dg-veM"/>
+                        <outlet property="tempLabel" destination="b9K-Ao-Dkf" id="dWY-bi-g4c"/>
+                        <outlet property="weatherIcon" destination="AdG-Pv-5Hi" id="L4A-II-vhf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,14 +91,14 @@
             <objects>
                 <viewController id="3sB-Mt-UZm" customClass="ChangeCityViewController" customModule="OpenWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="73W-jn-KTZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="7VR-Dx-Kao">
-                                <rect key="frame" x="0.0" y="-20" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-20" width="393" height="910"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-0C-WVn">
-                                <rect key="frame" x="61.5" y="120" width="197" height="88"/>
+                                <rect key="frame" x="98" y="267" width="197" height="88"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5vC-yk-iJg" customClass="DesignableTextField" customModule="OpenWeatherApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="34"/>
@@ -147,6 +152,9 @@
                                                 <real key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="getWeatherTapped:" destination="3sB-Mt-UZm" eventType="touchUpInside" id="29w-5F-Lth"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -154,7 +162,7 @@
                         <viewLayoutGuide key="safeArea" id="60U-4N-Fhr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="60U-4N-Fhr" firstAttribute="bottom" secondItem="7VR-Dx-Kao" secondAttribute="bottom" id="4EV-gj-drU"/>
+                            <constraint firstItem="60U-4N-Fhr" firstAttribute="bottom" secondItem="7VR-Dx-Kao" secondAttribute="bottom" constant="-48" id="4EV-gj-drU"/>
                             <constraint firstItem="60U-4N-Fhr" firstAttribute="trailing" secondItem="7VR-Dx-Kao" secondAttribute="trailing" id="AwL-tU-xST"/>
                             <constraint firstItem="7VR-Dx-Kao" firstAttribute="top" secondItem="60U-4N-Fhr" secondAttribute="top" constant="-20" id="Bbt-Ju-tZA"/>
                             <constraint firstItem="sjf-0C-WVn" firstAttribute="centerY" secondItem="73W-jn-KTZ" secondAttribute="centerY" constant="-110" id="NPY-Mt-o6p"/>
@@ -162,22 +170,28 @@
                             <constraint firstItem="sjf-0C-WVn" firstAttribute="centerX" secondItem="73W-jn-KTZ" secondAttribute="centerX" id="oey-Ds-1us"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="5vC-yk-iJg" id="kii-fX-bXf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wyl-tU-ahu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.25" y="-3.1690140845070425"/>
+            <point key="canvasLocation" x="820.61068702290072" y="-3.5211267605633805"/>
         </scene>
     </scenes>
     <designables>
         <designable name="5vC-yk-iJg">
-            <size key="intrinsicContentSize" width="57" height="26.5"/>
+            <size key="intrinsicContentSize" width="57" height="26.666666666666668"/>
+        </designable>
+        <designable name="yKQ-4t-LqI">
+            <size key="intrinsicContentSize" width="130.33333333333334" height="38.666666666666664"/>
         </designable>
     </designables>
     <resources>
         <image name="Night" width="664" height="1436"/>
         <image name="arrow.forward.square.fill" catalog="system" width="128" height="114"/>
-        <image name="cloudy2" width="128" height="128"/>
         <image name="day" width="658" height="1432"/>
+        <image name="fog" width="128" height="128"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
